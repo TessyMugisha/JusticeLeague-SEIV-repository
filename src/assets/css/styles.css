@@ -1,0 +1,61 @@
+/* --- Header --- */
+.site-header {
+  background: #0f141f;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-header .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--brand);
+  text-decoration: none;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav a:hover {
+  color: var(--brand);
+}
+
+/* Responsive nav for mobile */
+@media (max-width: 700px) {
+  .nav ul {
+    flex-direction: column;
+    background: #0f141f;
+    position: absolute;
+    top: 60px;
+    right: 24px;
+    padding: 12px;
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 8px;
+    display: none; /* hide by default */
+  }
+  .nav ul.show {
+    display: flex;
+  }
+}
