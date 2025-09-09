@@ -8,23 +8,21 @@
 
   <link rel="stylesheet" href="../assets/css/styles.css" />
 
-  <!-- (Only needed if you're using the Stratos Blue theme font) -->
+  <!-- Stratos Blue font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body class="theme-stratos"><!-- remove class if you don’t want the blue theme -->
+<body class="theme-stratos">
 
-  <!-- Top brand bar (same format as your other page) -->
-  <div class="navbar">
-    <div class="container inner">
-      <div class="brand">
-        <div class="logo">CS</div><span>Major Guide</span>
-      </div>
-      <nav>
-        <ul class="nav-links">
+  <header class="site-header">
+    <div class="wrap">
+      <div class="logo">CS Major Guide</div>
+      <button class="menu-toggle">Menu</button>
+      <nav class="nav">
+        <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a href="learn.html" aria-current="page">Learn More About CS</a></li>
+          <li><a class="active" href="learn.html">Learn More About CS</a></li>
           <li><a href="life.html">Life as a CS Major</a></li>
           <li><a href="cs-curriculum.html">Typical CS Curriculum</a></li>
           <li><a href="tools-resources.html">Tools & Resources</a></li>
@@ -35,22 +33,22 @@
         </ul>
       </nav>
     </div>
-  </div>
+  </header>
 
-  <!-- Centered hero -->
-  <section class="hero container">
-    <span class="kicker">Explore CS</span>
-    <h1>Learn More About Computer Science</h1>
-    <p>Understand the fundamentals, explore fields, and find starter resources to begin your CS journey.</p>
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Explore CS</span>
+      <h1>Learn More About Computer Science</h1>
+      <p>Understand the fundamentals, explore fields, and find starter resources to begin your CS journey.</p>
+    </div>
   </section>
 
-  <!-- Main content -->
-  <div class="container">
+  <div class="wrap">
     <figure class="hero-img">
       <img src="../assets/images/computer-science.jpg" alt="Students learning computer science">
     </figure>
 
-    <section>
+    <section class="prose">
       <h2>What is Computer Science?</h2>
       <p>Computer Science is the study of computation and information—covering algorithms, data, hardware, software, and systems.</p>
     </section>
@@ -71,20 +69,17 @@
       </div>
     </section>
 
-    <!-- Starter Resources as a grid (matches Tools page look) -->
     <section>
       <h3>Starter Resources</h3>
-      <ul class="resources-grid">
+      <ul class="resources">
         <li class="resources__item">
           <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener">
-            <h3>freeCodeCamp</h3>
-            <p>Full, guided tracks in HTML/CSS/JS and Python. Build projects as you learn.</p>
+            <strong>freeCodeCamp:</strong> Full, guided tracks in HTML/CSS/JS and Python. Build projects as you learn.
           </a>
         </li>
         <li class="resources__item">
           <a href="https://developer.mozilla.org/" target="_blank" rel="noopener">
-            <h3>MDN Web Docs</h3>
-            <p>Pro-level docs for web fundamentals—HTML, CSS, JavaScript, APIs.</p>
+            <strong>MDN Web Docs:</strong> Pro-level docs for web fundamentals—HTML, CSS, JavaScript, APIs.
           </a>
         </li>
       </ul>
