@@ -7,42 +7,69 @@
    <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
 <body>
-  
-    <div class="navbar">
-      <div class="container inner">
-        <div class="brand"><div class="logo"></div><span>CS Major Guide</span></div>
-        <button class="menu-btn">Menu</button>
-        <nav class="nav-links">
+
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">CS Major Guide</div>
+      
+      <button class="menu-toggle">Menu</button>
+      <nav class="nav">
+        <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="../pages/learn.html">Learn More About CS</a></li>
-          <li><a href="../pages/life.html">Life as a CS Major</a></li>
-          <li><a href="../pages/cs-curriculum.html">Typical CS Curriculum</a></li>
-          <li><a href="../pages/tool&resources.html">Tools & Resources</a></li>
-          <li><a href="../pages/career-paths.html">Careers in CS</a></li>
-          <li><a href="../pages/why_cs.html">Why CS</a></li>
-          <li><a href="../pages/jobs.html">Jobs & Roles</a></li>
-          <li><a href="../pages/prepare.html">Get Prepared</a></li>
-           <li><a href="../pages/cs-curriculum.html">Typical CS Curriculum</a></li>
-        </nav>
-      </div>
+          <li><a href="learn.html">Learn More About CS</a></li>
+          <li><a href="life.html">Life as a CS Major</a></li>
+          <li><a href="cs-curriculum.html">Typical CS Curriculum</a></li>
+          <li><a href="tool&resources.html">Tools & Resources</a></li>
+          <li><a href="career-paths.html">Careers in CS</a></li>
+          <li><a class="active" href="why_cs.html">Why CS</a></li>
+          <li><a href="jobs.html">Jobs & Roles</a></li>
+          <li><a href="prepare.html">Get Prepared</a></li>
+        </ul>
+      </nav>
     </div>
-    
-  <section class="hero container">
-    <h1>Why should I be a Computer Science major?</h1>
-    <p>CS sits at the center of innovation—powering apps, AI, cybersecurity, health tech, fintech, and more. It offers creative problem-solving, high demand globally, and the chance to build tools that help people at scale.</p>
+  </header>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Why CS</span>
+      <h1>Why should I be a Computer Science major?</h1>
+      <p>CS sits at the center of innovation—powering apps, AI, cybersecurity, health tech, fintech, and more. It offers creative problem-solving, high demand globally, and the chance to build tools that help people at scale.</p>
+    </div>
   </section>
-  
-  <div class="container prose">
-    <p>Reasons students choose CS:</p>
-    <ul>
-      <li>Impact: Build products used by thousands or millions.</li>
-      <li>Flexibility: Work in any industry—tech, health, finance, sports, government.</li>
-      <li>Creativity: Turn ideas into working software quickly.</li>
-      <li>Growth: Skills stay relevant as technology evolves.</li>
-      <li>Portability: Remote-friendly roles and global opportunities.</li>
-    </ul>
+
+  <section class="wrap cards">
+    <div class="card">
+      <h3>Impact</h3>
+      <p>Build products used by thousands or millions.</p>
+    </div>
+    <div class="card">
+      <h3>Flexibility</h3>
+      <p>Work in any industry—tech, health, finance, sports, government.</p>
+    </div>
+    <div class="card">
+      <h3>Creativity</h3>
+      <p>Turn ideas into working software quickly.</p>
+    </div>
+    <div class="card">
+      <h3>Growth</h3>
+      <p>Skills stay relevant as technology evolves.</p>
+    </div>
+    <div class="card">
+      <h3>Portability</h3>
+      <p>Remote-friendly roles and global opportunities.</p>
+    </div>
+  </section>
+
+  <section class="wrap prose">
     <p>CS isn’t only about coding—it’s about thinking clearly, modeling complex problems, and communicating solutions. If you enjoy puzzles, building things, and learning by doing, CS could be a great fit.</p>
-  </div>
-  
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2025 CS Major Guide. Built with pure HTML, CSS & JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
