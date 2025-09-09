@@ -1,7 +1,18 @@
+<!-- partials/header.html -->
 <header class="site-header">
-  <a href="../index.html" class="logo">CS Prep</a>
-  <nav class="menu">
-    <a href="../pages/learn.html">Learn CS</a>
-    <a href="../pages/life.html">Life as a CS Major</a>
-  </nav>
+  <div class="container">
+    <a href="../index.html" class="logo">CS Major Guide</a>
+
+    <button class="menu-toggle" aria-controls="site-menu" aria-expanded="false">☰ Menu</button>
+
+    <nav class="nav">
+      <ul id="site-menu">
+        <li><a href="../pages/learn.html">Learn</a></li>
+        <li><a href="../pages/life.html">Life</a></li>
+        <li><a href="../pages/why_cs.html">Why CS?</a></li> 
+      </ul>
+    </nav>
+
+    <button id="theme-toggle">🌙 Dark Mode</button>
+  </div>
 </header>
