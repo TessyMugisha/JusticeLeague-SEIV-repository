@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>CS Prep | Home</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <script defer src="./assets/js/inject.js"></script>
+</head>
+<body class="home dark">
+  <!-- Shared header -->
+  <div data-include="partials/header.html"></div>
+
+  <!-- Hero -->
+  <section class="home-hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="inner">
+      <p class="eyebrow">Welcome</p>
+      <h1>
+        hey there, high schooler 👋<br />
+        want to become a CS major?
+      </h1>
+      <p class="lead">
+        here’s everything you need to know—clear steps, real examples, and links that actually help.
+      </p>
+
+      <!-- Quick links under the headline -->
+      <nav class="hero-links">
+        <a class="chip" href="./pages/learn.html">📘 learn the basics</a>
+        <a class="chip" href="./pages/life.html">🎓 life as a CS major</a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Optional featured cards below hero -->
+  <main class="wrap">
+    <div class="cards">
+      <a href="./pages/learn.html" class="card">
+        <h2>What is CS?</h2>
+        <p>Understand algorithms, data, systems, and where this degree can take you.</p>
+      </a>
+      <a href="./pages/life.html" class="card">
+        <h2>Day in the Life</h2>
+        <p>Classes, study flow, projects, and FAQs—see what your week could look like.</p>
+      </a>
+    </div>
+  </main>
+
+  <!-- Shared footer -->
+  <div data-include="partials/footer.html"></div>
+</body>
+</html>
