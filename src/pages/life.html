@@ -3,22 +3,49 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Life as a CS Major</title>
+  <title>Life as a CS Major • CS Major Guide</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="A day in the life of a Computer Science major: courses, skills, study rhythm, and FAQs." />
   <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <!-- Optional: Stratos Blue font (only if you’re using that theme) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
   <script defer src="../assets/js/inject.js"></script>
 </head>
-<body>
-  <div data-include="../partials/header.html"></div>
+<body class="theme-stratos"><!-- remove theme-stratos if you don’t want the blue theme -->
 
-  <main class="wrap">
-    <header class="page-hero">
-      <p class="eyebrow">Student Life</p>
-      <h1>What It’s Like Being a CS Major</h1>
-      <p class="lead">From morning lectures to evening study groups—here’s a realistic snapshot of the rhythm, courses, and skills you’ll build.</p>
-    </header>
+  <!-- Top brand bar (like your example) -->
+  <div class="navbar">
+    <div class="container inner">
+      <div class="brand">
+        <div class="logo">CS</div><span>Major Guide</span>
+      </div>
+      <nav class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="learn.html">Learn More About CS</a></li>
+        <li><a href="life.html" aria-current="page">Life as a CS Major</a></li>
+        <li><a href="cs-curriculum.html">Typical CS Curriculum</a></li>
+        <li><a href="tools-resources.html">Tools & Resources</a></li>
+        <li><a href="career-paths.html">Careers in CS</a></li>
+        <li><a href="why_cs.html">Why CS</a></li>
+        <li><a href="jobs.html">Jobs & Roles</a></li>
+        <li><a href="prepare.html">Get Prepared</a></li>
+      </nav>
+    </div>
+  </div>
 
+  <!-- Hero (styled like your example: centered, kicker + h1 + blurb) -->
+  <section class="hero container">
+    <span class="kicker">Student Life</span>
+    <h1>What It’s Like Being a CS Major</h1>
+    <p>From morning lectures to evening study groups—here’s a realistic snapshot of the rhythm, courses, and skills you’ll build.</p>
+  </section>
+
+  <!-- Main content -->
+  <div class="container">
     <section class="cards">
       <figure class="card media">
         <img src="../assets/images/cs-major.jpg" alt="Computer science students collaborating in a study group">
@@ -29,7 +56,7 @@
         <h3>A Day in the Life</h3>
         <ul class="checklist">
           <li><strong>Morning:</strong> Lecture/Lab (Data Structures, Systems, Math)</li>
-          <li><strong>Afternoon:</strong> Team project using Git & VS Code</li>
+          <li><strong>Afternoon:</strong> Team project using Git &amp; VS Code</li>
           <li><strong>Evening:</strong> Study group, office hours, coding practice</li>
         </ul>
       </article>
@@ -37,13 +64,13 @@
 
     <section class="split">
       <div>
-        <h3>Core Courses & Skills</h3>
+        <h3>Core Courses &amp; Skills</h3>
         <ul class="bullet-columns">
           <li>Programming (Python/Java/C++)</li>
-          <li>Data Structures & Algorithms</li>
+          <li>Data Structures &amp; Algorithms</li>
           <li>Software Engineering (team projects)</li>
-          <li>Operating Systems & Networks</li>
-          <li>Databases & SQL</li>
+          <li>Operating Systems &amp; Networks</li>
+          <li>Databases &amp; SQL</li>
         </ul>
       </div>
       <aside class="note">
@@ -63,8 +90,7 @@
         <p>Usually Calculus I–II and Discrete Math at minimum; some programs add Linear Algebra and Probability.</p>
       </details>
     </section>
-  </main>
+  </div>
 
-  <div data-include="../partials/footer.html"></div>
 </body>
 </html>
