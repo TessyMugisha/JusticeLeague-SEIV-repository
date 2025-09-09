@@ -4,59 +4,82 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Tools & Resources • CS Major Guide</title>
+   <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
 <body>
   
   <header class="site-header">
-    <div class="site-header__container">
+    <div class="container">
+      <div class="logo">CS Major Guide</div>
       
-      <div class="site-header__brand">
-        <div class="site-header__brand-logo"></div>
-        <span class="site-header__brand-name">CS Major Guide</span>
-      </div>
-      
-      <button class="site-header__nav-toggle">Menu</button>
-      <nav class="nav-menu">
-        <a class="nav-menu__link" href="index.html">Home</a>
-        <a class="nav-menu__link" href="curriculum.html">Typical CS Curriculum</a>
-        <a class="nav-menu__link nav-menu__link--active" href="tools&resources.html">Tools & Resources</a>
-        <a class="chip" href="./pages/learn.html"> learn the basics</a>
-        <a class="chip" href="./pages/life.html"> life as a CS major</a>
-        <a class="chip" href="./pages/cs-curriculum.html">Basic CS Curriculum</a>
+      <button class="menu-toggle">Menu</button>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="../pages/learn.html">Learn More About CS</a></li>
+          <li><a href="../pages/life.html">Life as a CS Major</a></li>
+          <li><a href="../pages/cs-curriculum.html">Typical CS Curriculum</a></li>
+          <li><a href="../pages/tool&resources.html">Tools & Resources</a></li>
+          <li><a href="../pages/career-paths.html">Careers in CS</a></li>
+          <li><a href="../pages/why_cs.html">Why CS</a></li>
+          <li><a href="../pages/jobs.html">Jobs & Roles</a></li>
+          <li><a href="../pages/prepare.html">Get Prepared</a></li>
+           <li><a href="../pages/cs-curriculum.html">Typical CS Curriculum</a></li>
+        </ul>
       </nav>
     </div>
   </header>
     
-  <section class="page-intro">
-    <div class="page-intro__container">
-      <span class="page-intro__label">Toolkit</span>
-      <h1 class="page-intro__title">Tools & Resources</h1>
-      <p class="page-intro__description">
-        Set up a professional toolkit early and use it in every project.
-      </p>
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Toolkit</span>
+      <h1>Tools & Resources</h1>
+      <p>Set up a professional toolkit early and use it in every project.</p>
     </div>
   </section>
 
   <section class="resources">
-    <div class="resources__container">
-      <ul class="resources__list">
-        <li class="resources__item"><strong>Editor:</strong> VS Code</li>
-        <li class="resources__item"><strong>Version control:</strong> Git & GitHub</li>
-        <li class="resources__item"><strong>Terminal:</strong> Bash or PowerShell basics</li>
-        <li class="resources__item"><strong>Package managers:</strong> pip / npm</li>
-        <li class="resources__item"><strong>Learning hubs:</strong> MDN Web Docs, Python docs, FreeCodeCamp</li>
-        <li class="resources__item"><strong>Practice:</strong> LeetCode/HackerRank for problem-solving</li>
+    <div class="wrap">
+      <ul class="resources-grid">
+        <li class="resources__item">
+          <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">
+            <h3>VS Code</h3>
+            <p>Powerful editor for coding in many languages.</p>
+          </a>
+        </li>
+        <li class="resources__item">
+          <a href="https://www.w3schools.com/git/git_intro.asp?remote=github" target="_blank" rel="noopener noreferrer">
+            <h3>Git & GitHub</h3>
+            <p>Version control to manage your projects and collaborate.</p>
+          </a>
+        </li>
+        <li class="resources__item">
+          <a href="https://www.npmjs.com/package/pip" target="_blank" rel="noopener noreferrer">
+            <h3>pip / npm</h3>
+            <p>Package managers for Python and JavaScript projects.</p>
+          </a>
+        </li>
+        <li class="resources__item">
+          <a href="https://learn.microsoft.com/en-us/training/student-hub/" target="_blank" rel="noopener noreferrer">
+            <h3>Learning Hubs</h3>
+            <p>Official docs and guided tutorials for coding and tech.</p>
+          </a>
+        </li>
+        <li class="resources__item">
+          <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer">
+            <h3>LeetCode</h3>
+            <p>Practice coding problems to improve algorithms and data structures.</p>
+          </a>
+        </li>
+        <li class="resources__item">
+          <a href="https://www.hackerrank.com/" target="_blank" rel="noopener noreferrer">
+            <h3>HackerRank</h3>
+            <p>Practice coding, algorithms, and competitive programming challenges.</p>
+          </a>
+        </li>
       </ul>
     </div>
   </section>
-  
-  <footer class="site-footer">
-    <div class="site-footer__container">
-      <div class="site-footer__text">
-        © 2025 CS Major Guide. Built with pure HTML, CSS & JavaScript.
-      </div>
-    </div>
-  </footer>
 
   <script src="script.js"></script>
 </body>
