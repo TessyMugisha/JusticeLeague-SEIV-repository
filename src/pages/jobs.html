@@ -3,91 +3,141 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Career Paths in CS • CS Major Guide</title>
-   <link rel="stylesheet" href="../assets/css/styles.css" />
+  <title>Learn More About CS • Justice League CS Guide</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="container">
-      <div class="logo">CS Major Guide</div>
-      
-      <button class="menu-toggle">Menu</button>
-      <nav class="nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a class="active" href="careers.html">Career Paths</a></li>
-          <li><a href="prepare.html">How to Prepare</a></li>
-          <li><a href="tool&resources.html">Tools & Resources</a></li>
-        </ul>
-      </nav>
+
+  <!-- Header / Navigation -->
+<header class="site-header">
+  <div class="container">
+    <div class="logo">Justice League CS Guide</div>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-menu">
+      Menu
+    </button>
+    <nav class="nav">
+      <ul id="site-menu">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="learn.html">Learn More</a></li>
+        <li><a href="life.html">Day in the life</a></li>
+        <li><a href="cs-curriculum.html">CS Curriculum</a></li>
+        <li><a href="tool&resources.html">Tools/Resources</a></li>
+        <li><a href="career-paths.html">Career Paths</a></li>
+        <li><a href="why_cs.html">Why CS</a></li>
+        <li><a href="jobs.html">Salary Ranges</a></li>
+        <li><a href="prepare.html">Get Prepared</a></li>
+        <li><a href="contacts.html">FAQs/Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <h1>CS Careers, Explained — With Pay</h1>
+    <p>Clear role descriptions, core skills, and typical salary ranges so you can compare paths at a glance.</p>
+  </div>
+</section>
+
+
+<!-- Careers (Soft Table, no bubbles) -->
+<section class="wrap">
+  <h2>Popular CS Roles</h2>
+
+  <div class="soft-table" role="table" aria-label="CS roles with descriptions, tech, and salary ranges">
+    <!-- Header -->
+    <div class="soft-row soft-head" role="row">
+      <div class="soft-cell" role="columnheader">Role</div>
+      <div class="soft-cell" role="columnheader">What You Do</div>
+      <div class="soft-cell" role="columnheader">Key Tech</div>
+      <div class="soft-cell soft-salary" role="columnheader">Salary*</div>
     </div>
-  </header>
 
-  <section class="page-hero">
-    <div class="wrap">
-      <span class="eyebrow">Pathways</span>
-      <h1>What kind of career can a CS major have?</h1>
-      <p>CS careers range from building mobile apps to defending networks, analyzing data, and creating intelligent systems. You can mix technical depth with people‑focused work like product management or UX engineering.</p>
-    </div>
-  </section>
-
-  <section class="cards">
-    <div class="wrap">
-      <!-- Software Engineer -->
-      <div class="card">
-        <h3>Software Engineer</h3>
-        <p><strong>Role Description:</strong> Design, build, and maintain applications and services across platforms.</p>
-        <p><strong>Key Technologies:</strong> Java, Python, JavaScript, C++, React, Angular, Spring, Node.js, Git, Docker, Jenkins, AWS</p>
-        <p><strong>Salary Ranges:</strong> Junior: $70k-$100k | Mid: $100k-$150k | Senior: $150k-$250k+</p>
-      </div>
-
-      <!-- Data/ML Engineer -->
-      <div class="card">
-        <h3>Data / ML Engineer</h3>
-        <p><strong>Role Description:</strong> Build data pipelines and machine learning systems.</p>
-        <p><strong>Key Technologies:</strong> Python, R, SQL, TensorFlow, PyTorch, Scikit-learn, Jupyter, Hadoop, Spark, Kubernetes</p>
-        <p><strong>Salary Ranges:</strong> Junior: $80k-$110k | Mid: $110k-$160k | Senior: $160k-$250k+</p>
-      </div>
-
-      <!-- Cybersecurity Analyst -->
-      <div class="card">
-        <h3>Cybersecurity Analyst</h3>
-        <p><strong>Role Description:</strong> Protect systems and respond to security incidents.</p>
-        <p><strong>Key Technologies:</strong> Wireshark, Nmap, Metasploit, Burp Suite, NIST, ISO 27001, MITRE ATT&CK, Penetration Testing, Incident Response</p>
-        <p><strong>Salary Ranges:</strong> Junior: $65k-$90k | Mid: $90k-$130k | Senior: $130k-$200k+</p>
-      </div>
-
-      <!-- Cloud/DevOps Engineer -->
-      <div class="card">
-        <h3>Cloud / DevOps Engineer</h3>
-        <p><strong>Role Description:</strong> Manage infrastructure and deployment pipelines.</p>
-        <p><strong>Key Technologies:</strong> AWS, Azure, GCP, Kubernetes, Jenkins, Terraform, CI/CD, Infrastructure as Code</p>
-        <p><strong>Salary Ranges:</strong> Junior: $75k-$100k | Mid: $100k-$140k | Senior: $140k-$220k+</p>
-      </div>
-
-      <!-- Product Manager -->
-      <div class="card">
-        <h3>Product Manager</h3>
-        <p><strong>Role Description:</strong> Define product strategy and coordinate development.</p>
-        <p><strong>Key Technologies:</strong> Jira, Confluence, Figma, Agile, Scrum, Kanban, Tableau, SQL, Excel</p>
-        <p><strong>Salary Ranges:</strong> Junior: $80k-$110k | Mid: $110k-$160k | Senior: $160k-$250k+</p>
-      </div>
-
-      <!-- UX Engineer -->
-      <div class="card">
-        <h3>UX Engineer</h3>
-        <p><strong>Role Description:</strong> Design and implement user interfaces.</p>
-        <p><strong>Key Technologies:</strong> HTML, CSS, JavaScript, Figma, Sketch, Adobe XD, React, Vue.js, Sass</p>
-        <p><strong>Salary Ranges:</strong> Junior: $70k-$95k | Mid: $95k-$140k | Senior: $140k-$200k+</p>
+    <!-- Software Engineer -->
+    <div class="soft-row" role="row">
+      <div class="soft-cell" role="cell"><strong>Software Engineer</strong></div>
+      <div class="soft-cell" role="cell">Design, build, and ship apps/services across web, mobile, and backend.</div>
+      <div class="soft-cell" role="cell">Java, Python, JavaScript, React, Node, Docker</div>
+      <div class="soft-cell soft-salary" role="cell">
+        Jr $70–100k • Mid $100–150k • Sr $150–250k+
       </div>
     </div>
-  </section>
 
+    <!-- Data / ML Engineer -->
+    <div class="soft-row" role="row">
+      <div class="soft-cell" role="cell"><strong>Data / ML Engineer</strong></div>
+      <div class="soft-cell" role="cell">Build data pipelines and production ML systems.</div>
+      <div class="soft-cell" role="cell">Python, SQL, TensorFlow, PyTorch, Spark</div>
+      <div class="soft-cell soft-salary" role="cell">
+        Jr $80–110k • Mid $110–160k • Sr $160–250k+
+      </div>
+    </div>
+
+    <!-- Cybersecurity Analyst -->
+    <div class="soft-row" role="row">
+      <div class="soft-cell" role="cell"><strong>Cybersecurity Analyst</strong></div>
+      <div class="soft-cell" role="cell">Detect threats, harden systems, and respond to incidents.</div>
+      <div class="soft-cell" role="cell">Nmap, Wireshark, Burp, MITRE ATT&CK, IR</div>
+      <div class="soft-cell soft-salary" role="cell">
+        Jr $65–90k • Mid $90–130k • Sr $130–200k+
+      </div>
+    </div>
+
+    <!-- Cloud / DevOps Engineer -->
+    <div class="soft-row" role="row">
+      <div class="soft-cell" role="cell"><strong>Cloud / DevOps Engineer</strong></div>
+      <div class="soft-cell" role="cell">Own infrastructure, CI/CD, and reliability at scale.</div>
+      <div class="soft-cell" role="cell">AWS, Kubernetes, Terraform, CI/CD</div>
+      <div class="soft-cell soft-salary" role="cell">
+        Jr $75–100k • Mid $100–140k • Sr $140–220k+
+      </div>
+    </div>
+
+    <!-- Product Manager -->
+    <div class="soft-row" role="row">
+      <div class="soft-cell" role="cell"><strong>Product Manager</strong></div>
+      <div class="soft-cell" role="cell">Define product strategy and coordinate design/engineering.</div>
+      <div class="soft-cell" role="cell">Figma, Jira, SQL, Analytics</div>
+      <div class="soft-cell soft-salary" role="cell">
+        Jr $80–110k • Mid $110–160k • Sr $160–250k+
+      </div>
+    </div>
+
+    <!-- UX Engineer -->
+    <div class="soft-row" role="row">
+      <div class="soft-cell" role="cell"><strong>UX Engineer</strong></div>
+      <div class="soft-cell" role="cell">Design and implement accessible, polished interfaces.</div>
+      <div class="soft-cell" role="cell">HTML, CSS, JavaScript, React, Figma</div>
+      <div class="soft-cell soft-salary" role="cell">
+        Jr $70–95k • Mid $95–140k • Sr $140–200k+
+      </div>
+    </div>
+  </div>
+
+  <p class="soft-footnote">*Ranges are approximate and vary by location, company, and experience.</p>
+</section>
+
+  <section class="wrap">
+  <p style="text-align:center; margin: 16px 0 0;">
+    <a
+      class="btn"
+      href="https://www.levels.fyi/?compare=Paycom,Boeing,Northrop%20Grumman&track=Software%20Engineer"
+      target="_blank"
+      rel="noopener"
+    >
+      More info on roles & salary ranges →
+    </a>
+  </p>
+</section>
+
+  <!-- Note Section -->
   <section class="note wrap">
     <p><strong>Note:</strong> Salary ranges are approximate and can vary significantly based on location, company size, and experience level. Many students start broadly as software engineers, then specialize after exposure to different projects.</p>
   </section>
 
+
+  <!-- Script for menu toggle -->
   <script src="script.js"></script>
 </body>
 </html>
