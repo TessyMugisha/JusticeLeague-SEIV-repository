@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FAQ & Contact • CS Major Guide</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <!-- Page-local polish for CTA -->
+  <style>
+    .cta-banner {
+      background: var(--surface);
+      border: 1px solid var(--header-border);
+      border-radius: var(--radius);
+      padding: 18px;
+      box-shadow: var(--shadow);
+      text-align: center;
+      margin-top: 16px;
+    }
+    .cta-row {
+      display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
+      margin-top: 10px;
+    }
+    .btn { text-decoration: none; }
+  </style>
+</head>
+<body class="theme-stratos">
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">Justice League CS Guide</div>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-menu">
+        Menu
+      </button>
+      <nav class="nav">
+        <ul id="site-menu">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="learn.html">Learn More</a></li>
+          <li><a href="life.html">Day in the life</a></li>
+          <li><a href="cs-curriculum.html">CS Curriculum</a></li>
+          <li><a href="tool&resources.html">Tools/Resources</a></li>
+          <li><a href="career-paths.html">Career Paths</a></li>
+          <li><a href="why_cs.html">Why CS</a></li>
+          <li><a href="jobs.html">Salary Ranges</a></li>
+          <li><a href="prepare.html">Get Prepared</a></li>
+          <li><a href="contacts.html">FAQs/Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>FAQ & Contact</h1>
+      <p>Commonly asked questions and ways to get in touch.</p>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="wrap faq">
+    <details>
+      <summary>How do I stand out?</summary>
+      <p>Projects, internships, open-source contributions, and clear communication. Show real work and explain your decisions.</p>
+    </details>
+
+    <details>
+      <summary>How do I find internships?</summary>
+      <p>Use campus career services, referrals, and apply early with tailored resumes. Track applications and follow up.</p>
+    </details>
+
+    <details>
+      <summary>What if I’m switching into CS?</summary>
+      <p>Start with fundamentals (Python + data structures), take an outside course, and build 1–2 small projects to show momentum.</p>
+    </details>
+
+    <details>
+      <summary>Do I need a powerful laptop?</summary>
+      <p>8–16GB RAM is fine to start. Schools often provide lab machines and remote servers for heavy tasks.</p>
+    </details>
+  </section>
+
+  <!-- Myths vs Reality -->
+  <section class="wrap myths">
+    <h2>Myths vs. Reality</h2>
+
+    <details>
+      <summary>“CS is only for math geniuses.”</summary>
+      <p>You’ll use math (logic, discrete, sometimes stats), but persistence and practice matter more—skills grow with time.</p>
+    </details>
+
+    <details>
+      <summary>“It’s just coding all day.”</summary>
+      <p>CS includes design, teamwork, documentation, testing, and understanding users. Communication and product sense are huge.</p>
+    </details>
+
+    <details>
+      <summary>“You have to pick one path forever.”</summary>
+      <p>Skills transfer across web, mobile, data, DevOps, security, and product. Many people move as interests evolve.</p>
+    </details>
+  </section>
+
+  <!-- Heroic CTA -->
+  <section class="wrap cta-banner" aria-label="Final encouragement">
+    <h2>You’re ready to save the world with your CS skills 🌎🛡️</h2>
+    <p>If you need any assistance from the Justice League or have questions, we’re one click away.</p>
+    <div class="cta-row">
+      <a class="btn" href="prepare.html">Get Prepared →</a>
+      <a class="btn" href="tools-resources.html">Tools & Resources →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap">
+      <p class="mb-1"><strong>Justice League CS Guide</strong></p>
+      <p class="mb-0">
+        Built by the Justice League (Lewis, Cynthia, Tessy, Fabiola) •
+        © <span id="year"></span>
+      </p>
+      <p class="mt-2">
+        Contact: <a href="mailto:justiceleague@gmail.com">justiceleague@gmail.com</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Menu toggle + year -->
+  <script>
+    (function () {
+      const btn = document.querySelector('.menu-toggle');
+      const list = document.getElementById('site-menu');
+      btn?.addEventListener('click', () => {
+        const open = list.classList.toggle('show');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      const y = document.getElementById('year');
+      if (y) y.textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>

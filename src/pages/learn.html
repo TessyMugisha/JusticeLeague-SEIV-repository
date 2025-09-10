@@ -1,57 +1,100 @@
-<!-- pages/learn.html -->
+<!-- Tessy Mugisha -->
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Learn More About CS</title>
+  <title>Learn More About CS • Justice League CS Guide</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Understand the fundamentals of computer science, explore fields, and start with beginner-friendly resources." />
+
+  <!-- Styles -->
   <link rel="stylesheet" href="../assets/css/styles.css" />
-  <script defer src="../assets/js/inject.js"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
-  <div data-include="../partials/header.html"></div>
+<body class="theme-stratos">
+
+
+  <!-- Header / Navigation -->
+<header class="site-header">
+  <div class="container">
+    <div class="logo">Justice League CS Guide</div>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-menu">
+      Menu
+    </button>
+    <nav class="nav">
+      <ul id="site-menu">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="learn.html">Learn More</a></li>
+        <li><a href="life.html">Day in the life</a></li>
+        <li><a href="cs-curriculum.html">CS Curriculum</a></li>
+        <li><a href="tool&resources.html">Tools/Resources</a></li>
+        <li><a href="career-paths.html">Career Paths</a></li>
+        <li><a href="why_cs.html">Why CS</a></li>
+        <li><a href="jobs.html">Salary Ranges</a></li>
+        <li><a href="prepare.html">Get Prepared</a></li>
+        <li><a href="contacts.html">FAQs/Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <!-- Hero Section -->
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>Learn More About Computer Science</h1>
+      <p>Understand the fundamentals, explore fields, and find starter resources to begin your CS journey.</p>
+    </div>
+  </section>
 
   <main class="wrap">
-    <header class="page-hero">
-      <p class="eyebrow">Explore CS</p>
-      <h1>Learn More About Computer Science</h1>
-      <p class="lead">Understand the fundamentals, explore fields, and find starter resources to begin your CS journey.</p>
-    </header>
-
+    <!-- Hero Image -->
     <figure class="hero-img">
-      <img src="../assets/images/computer-science.jpg" alt="Students learning computer science">
+      <img src="../assets/images/computer science.jpg" alt="Students learning computer science">
     </figure>
 
-    <section>
-      <h2>What is Computer Science?</h2>
-      <p>Computer Science is the study of computation and information—covering algorithms, data, hardware, software, and systems.</p>
-    </section>
+    <!-- What is CS -->
+<section class="prose fun-intro">
+  <div class="terminal">
+    <p class="typing">> Initiating hack... accessing mainframe...</p>
+    <p class="typing delay">> Bypassing firewalls...</p>
+    <p class="typing delay2">> Found it! The real secret is...</p>
+  </div>
 
-    <section>
-      <h3>Fields</h3>
-      <div class="cards">
-        <article class="card">
-          <img src="../assets/images/ai.jpg" alt="AI illustration">
-          <h4>AI & Data</h4>
-          <p>Machine learning, data analysis, natural language processing, and computer vision.</p>
-        </article>
-        <article class="card">
-          <img src="../assets/images/frontend-vs-backend.jpg" alt="Web illustration">
-          <h4>Web & Apps</h4>
-          <p>Frontend and backend development, APIs, and mobile applications.</p>
-        </article>
-      </div>
-    </section>
+  <h2>What is Computer Science?</h2>
+  <p>
+    Computer Science isn’t really about “hacking the mainframe.”  
+    It’s the study of computation and information—covering algorithms, data, hardware, software, and systems.
+  </p>
+  <!--  A Short History of Computer Science -->
+<section class="wrap prose">
+  <h2>A Short History of Computer Science</h2>
+  <ul class="key-points">
+    <li><strong>1800s:</strong> Ada Lovelace writes the first algorithm for Babbage’s “Analytical Engine.”</li>
+    <li><strong>1930s–40s:</strong> Alan Turing lays the foundations of computing; WWII sees the first programmable machines.</li>
+    <li><strong>1950s–70s:</strong> Mainframes and programming languages (like FORTRAN, C) power business and science.</li>
+    <li><strong>1980s–90s:</strong> PCs and the internet bring computing to homes and schools worldwide.</li>
+    <li><strong>2000s–Today:</strong> Cloud, AI, mobile, and quantum computing reshape how we live, work, and connect.</li>
+  </ul>
+  <p style="text-align:center; font-style:italic; color:var(--muted); margin-top:1rem;">
+    From punch cards to AI, CS has grown from theory to powering almost every part of modern life.
+  </p>
+</section>
 
-    <section>
-      <h3>Starter Resources</h3>
-      <ul class="links">
-        <li><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener">freeCodeCamp</a></li>
-        <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
-      </ul>
-    </section>
+<section class="wrap prose">
+  <h2>Where We’re Headed</h2>
+  <p>
+    Now that you know what Computer Science is and where it came from,
+    let’s explore more about the different roles, paths, and areas you can dive into from programming and AI to cybersecurity and beyond.
+  </p>
+</section>
+
   </main>
+  <script src="../assets/js/script.js"></script>
 
-  <div data-include="../partials/footer.html"></div>
 </body>
 </html>

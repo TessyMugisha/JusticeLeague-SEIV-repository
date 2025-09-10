@@ -1,74 +1,188 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Typical CS Curriculum • CS Major Guide</title>
-  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Typical CS Curriculum • Justice League CS Guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
 <body>
-  
-  <header class="site-header">
-    <div class="site-header__container">
-      
-      <div class="site-header__brand">
-        <div class="site-header__brand-logo"></div>
-        <span class="site-header__brand-name">CS Major Guide</span>
+
+  <!-- Header / Navigation -->
+<header class="site-header">
+  <div class="container">
+    <div class="logo">Justice League CS Guide</div>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-menu">
+      Menu
+    </button>
+    <nav class="nav">
+      <ul id="site-menu">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="learn.html">Learn More</a></li>
+        <li><a href="life.html">Day in the life</a></li>
+        <li><a href="cs-curriculum.html">CS Curriculum</a></li>
+        <li><a href="tool&resources.html">Tools/Resources</a></li>
+        <li><a href="career-paths.html">Career Paths</a></li>
+        <li><a href="why_cs.html">Why CS</a></li>
+        <li><a href="jobs.html">Salary Ranges</a></li>
+        <li><a href="prepare.html">Get Prepared</a></li>
+        <li><a href="contacts.html">FAQs/Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="page-hero">
+  <div class="wrap">
+    <h1>Typical CS Curriculum</h1>
+    <p class="lead">
+      Schools vary, but most programs move from fundamentals to systems and specialized electives. 
+      Here’s a simple, realistic roadmap.
+    </p>
+  </div>
+</section>
+
+<main>
+<!-- Year-by-Year (zig-zag with year bubbles) -->
+<section class="wrap curriculum-grid">
+  <article class="card year-card">
+    <header class="year-header">
+      <span class="year-badge">Year 1</span>
+      <h3>Foundations</h3>
+    </header>
+    <ul>
+      <li><strong>Intro to CS & Programming I/II</strong> (Python/Java)</li>
+      <li><strong>Discrete Math</strong> (logic, sets, proofs)</li>
+      <li><strong>Calculus I–II</strong> + core GE</li>
+    </ul>
+    <p><em>Goal:</em> think like a programmer; write clean basics.</p>
+  </article>
+
+  <article class="card year-card">
+    <header class="year-header">
+      <span class="year-badge">Year 2</span>
+      <h3>Core Building Blocks</h3>
+    </header>
+    <ul>
+      <li><strong>Data Structures</strong> (trees, hash maps, complexity)</li>
+      <li><strong>Computer Architecture</strong> (CPU, memory)</li>
+      <li><strong>Probability/Statistics</strong></li>
+    </ul>
+    <p><em>Goal:</em> efficient code + how computers work.</p>
+  </article>
+
+  <article class="card year-card">
+    <header class="year-header">
+      <span class="year-badge">Year 3</span>
+      <h3>Systems & Scale</h3>
+    </header>
+    <ul>
+      <li><strong>Algorithms</strong> (graphs, greedy vs. DP)</li>
+      <li><strong>Operating Systems</strong> (processes, concurrency)</li>
+      <li><strong>Databases</strong> (SQL, transactions)</li>
+      <li><strong>Networks</strong> (TCP/IP, HTTP)</li>
+    </ul>
+    <p><em>Goal:</em> reason about larger systems end-to-end.</p>
+  </article>
+
+  <article class="card year-card">
+    <header class="year-header">
+      <span class="year-badge">Year 4</span>
+      <h3>Depth & Projects</h3>
+    </header>
+    <ul>
+      <li><strong>Security</strong> or <strong>Software Eng I/II</strong></li>
+      <li><strong>Capstone/Senior Project</strong></li>
+      <li><strong>Electives</strong> to specialize</li>
+    </ul>
+    <p><em>Goal:</em> specialize and ship portfolio work.</p>
+  </article>
+</section>
+
+
+  <!-- Common Electives -->
+  <section class="wrap">
+    <h2>Common Electives</h2>
+    <div class="cards">
+      <div class="card">
+        <h4>AI & Data</h4>
+        <ul>
+          <li>Intro to AI / Machine Learning</li>
+          <li>Data Mining / Visualization</li>
+          <li>Natural Language Processing</li>
+        </ul>
       </div>
-      
-      <button class="site-header__nav-toggle">Menu</button>
-      <nav class="nav-menu">
-        <a class="nav-menu__link" href="index.html">Home</a>
-        <a class="nav-menu__link nav-menu__link--active" href="curriculum.html">Typical CS Curriculum</a>
-        <a class="nav-menu__link" href="tools&resources.html">Tools & Resources</a>
-        <a class="chip" href="./pages/learn.html"> learn the basics</a>
-        <a class="chip" href="./pages/life.html"> life as a CS major</a>
-        <a class="chip" href="./pages/cs-curriculum.html">Basic CS Curriculum</a>
-      </nav>
-    </div>
-  </header>
-    
-  <section class="page-intro">
-    <div class="page-intro__container">
-      <span class="page-intro__label">Courses</span>
-      <h1 class="page-intro__title">Typical CS Curriculum</h1>
-      <p class="page-intro__description">
-        Exact courses vary by school, but most programs follow a similar path 
-        from fundamentals to systems and electives.
-      </p>
+      <div class="card">
+        <h4>Systems & Cloud</h4>
+        <ul>
+          <li>Distributed Systems / Cloud Computing</li>
+          <li>Parallel Computing</li>
+          <li>DevOps & SRE</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Security & Privacy</h4>
+        <ul>
+          <li>Cryptography</li>
+          <li>Network/App Security</li>
+          <li>Digital Forensics</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Human & Product</h4>
+        <ul>
+          <li>Human–Computer Interaction (HCI)</li>
+          <li>UX Engineering</li>
+          <li>Product Management for Engineers</li>
+        </ul>
+      </div>
     </div>
   </section>
-
-
-  <section class="curriculum-grid">
-    <div class="curriculum-grid__container">
-      <div class="curriculum-grid__card">
-        <h3 class="curriculum-grid__card-title">Year 1</h3>
-        <p class="curriculum-grid__card-text">Intro to CS, Programming I/II, Discrete Math, Ethics in Tech.</p>
-      </div>
-      <div class="curriculum-grid__card">
-        <h3 class="curriculum-grid__card-title">Year 2</h3>
-        <p class="curriculum-grid__card-text">Data Structures, Computer Architecture, Probability/Stats, Web Dev.</p>
-      </div>
-      <div class="curriculum-grid__card">
-        <h3 class="curriculum-grid__card-title">Year 3</h3>
-        <p class="curriculum-grid__card-text">Algorithms, Operating Systems, Databases, Networks.</p>
-      </div>
-      <div class="curriculum-grid__card">
-        <h3 class="curriculum-grid__card-title">Year 4</h3>
-        <p class="curriculum-grid__card-text">Security, AI/ML, Distributed Systems, Capstone Project, Electives.</p>
-      </div>
+<!-- Notes (organized) -->
+<section class="wrap">
+  <h2>Notes</h2>
+  <div class="notes-grid">
+    <div class="note-card">
+      <h4>Advising</h4>
+      <ul class="note-list">
+        <li><strong>Meet your advisor</strong> at least once per semester.</li>
+        <li>Map courses, prereqs, and key deadlines early.</li>
+      </ul>
     </div>
-  </section>
-  
-  <footer class="site-footer">
-    <div class="site-footer__container">
-      <div class="site-footer__text">
-        © 2025 CS Major Guide. Built with pure HTML, CSS & JavaScript.
-      </div>
-    </div>
-  </footer>
 
-  <script src="script.js"></script>
+    <div class="note-card">
+      <h4>Staying on Track</h4>
+      <ul class="note-list">
+        <li><strong>Check your degree audit</strong> each term (credits, GPA, core).</li>
+        <li>Verify you’re pacing to graduate on time.</li>
+      </ul>
+    </div>
+
+    <div class="note-card">
+      <h4>Specialization</h4>
+      <ul class="note-list">
+        <li>Curious about switching or adding a focus?</li>
+        <li>Ask about prereqs & course availability; try an elective first.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+<!-- Menu toggle -->
+<script>
+  (function () {
+    const btn = document.querySelector('.menu-toggle');
+    const list = document.getElementById('site-menu');
+    btn?.addEventListener('click', () => {
+      const open = list.classList.toggle('show');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
 </body>
 </html>

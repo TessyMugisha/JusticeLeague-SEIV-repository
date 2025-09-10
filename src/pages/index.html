@@ -1,53 +1,141 @@
+<!-- Combined Group effort-->
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>CS Prep | Home</title>
+  <title>CS Prep | Home • Justice League CS Guide</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="./assets/css/styles.css" />
-  <script defer src="./assets/js/inject.js"></script>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
-<body class="home dark">
-  <!-- Shared header -->
-  <div data-include="partials/header.html"></div>
+<body>
 
-  <!-- Hero -->
-  <section class="home-hero">
-    <div class="hero-bg" aria-hidden="true"></div>
-    <div class="inner">
-      <p class="eyebrow">Welcome</p>
-      <h1>
-        hey there, high schooler 👋<br />
-        want to become a CS major?
-      </h1>
-      <p class="lead">
-        here’s everything you need to know—clear steps, real examples, and links that actually help.
-      </p>
 
-      <!-- Quick links under the headline -->
-      <nav class="hero-links">
-        <a class="chip" href="./pages/learn.html">📘 learn the basics</a>
-        <a class="chip" href="./pages/life.html">🎓 life as a CS major</a>
-        <a class="chip" href="./pages/cs-curriculum.html">Basic CS Curriculum</a>
-      </nav>
+  <!-- Header / Navigation -->
+<header class="site-header">
+  <div class="container">
+    <div class="logo">Justice League CS Guide</div>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-menu">
+      Menu
+    </button>
+    <nav class="nav">
+      <ul id="site-menu">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="learn.html">Learn More</a></li>
+        <li><a href="life.html">Day in the life</a></li>
+        <li><a href="cs-curriculum.html">CS Curriculum</a></li>
+        <li><a href="tool&resources.html">Tools/Resources</a></li>
+        <li><a href="career-paths.html">Career Paths</a></li>
+        <li><a href="why_cs.html">Why CS</a></li>
+        <li><a href="jobs.html">Salary Ranges</a></li>
+        <li><a href="prepare.html">Get Prepared</a></li>
+        <li><a href="contacts.html">FAQs/Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- Hero Section -->
+  <section class="page-hero">
+    <div class="wrap">
+      <!-- JL rectangle image at the top -->
+  
+      <img src="../assets/images/jl.jpg" alt="Justice League" class="hero-img" />
+
+      <!-- Main statement -->
+      <h1>Are You a High Schooler Thinking About a Career in CS?</h1>
+
+      <!-- Impact statement -->
+      <p><strong>Justice League</strong> is here to help you!</p>
+
     </div>
+      <!-- Supporting text -->
+      <p>
+        Explore careers, resources, tools, and real-life student insights
+        to launch your journey into Computer Science.
+      </p>
   </section>
 
-  <!-- Optional featured cards below hero -->
+  <!-- Main Navigation Cards (Button-style) -->
   <main class="wrap">
-    <div class="cards">
-      <a href="./pages/learn.html" class="card">
-        <h2>What is CS?</h2>
-        <p>Understand algorithms, data, systems, and where this degree can take you.</p>
-      </a>
-      <a href="./pages/life.html" class="card">
-        <h2>Day in the Life</h2>
-        <p>Classes, study flow, projects, and FAQs—see what your week could look like.</p>
-      </a>
-    </div>
+    <ul class="resources-grid" role="list">
+      <li class="resources__item">
+        <a href="learn.html" aria-label="Learn More About CS">
+          <h3>Learn More About CS</h3>
+          <p>Understand the fundamentals of computer science and explore its many fields.</p>
+        </a>
+      </li>
+
+      <li class="resources__item">
+        <a href="life.html" aria-label="Life as a CS Major">
+          <h3>Life as a CS Major</h3>
+          <p>Discover a typical day, courses, and skills that CS students build.</p>
+        </a>
+      </li>
+
+      <li class="resources__item">
+        <a href="cs-curriculum.html" aria-label="Typical CS Curriculum">
+          <h3>CS Curriculum</h3>
+          <p>See the core courses and structure of a CS degree program.</p>
+        </a>
+      </li>
+
+      <li class="resources__item">
+        <a href="tools-resources.html" aria-label="Tools and Resources">
+          <h3>Tools & Resources</h3>
+          <p>Explore essential tools and online resources for CS students.</p>
+        </a>
+      </li>
+
+      <li class="resources__item">
+        <a href="career-paths.html" aria-label="Career Paths">
+          <h3>Career Paths</h3>
+          <p>Learn what careers CS majors pursue and how to get there.</p>
+        </a>
+      </li>
+
+      <li class="resources__item">
+        <a href="why_cs.html" aria-label="Why CS">
+          <h3>Why CS?</h3>
+          <p>Understand why choosing CS can be rewarding and impactful.</p>
+        </a>
+      </li>
+
+      <li class="resources__item">
+        <a href="jobs.html" aria-label="Jobs and Roles">
+          <h3>Salary Ranges</h3>
+          <p>Explore specific job titles, responsibilities, and salaries.</p>
+        </a>
+      </li>
+
+      <li class="resources__item">
+        <a href="prepare.html" aria-label="Get Prepared">
+          <h3>Get Prepared</h3>
+          <p>Step-by-step guidance on building skills and preparing for a CS degree.</p>
+        </a>
+      </li>
+    </ul>
   </main>
 
-  <!-- Shared footer -->
-  <div data-include="partials/footer.html"></div>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Built By the Justice League (Lewis, Cynthia, Tessy, Fabiola) © <span id="year"></span>Justice League CS Guide</p>
+    </div>
+  </footer>
+
+  <!-- Menu toggle + year -->
+  <script>
+    (function () {
+      const btn = document.querySelector('.menu-toggle');
+      const list = document.getElementById('site-menu');
+      btn?.addEventListener('click', () => {
+        const open = list.classList.toggle('show');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
