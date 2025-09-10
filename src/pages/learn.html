@@ -1,8 +1,10 @@
+<!-- Tessy Mugisha -->
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Learn More About CS • CS Major Guide</title>
+  <title>Learn More About CS • Justice League CS Guide</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="Understand the fundamentals of computer science, explore fields, and start with beginner-friendly resources." />
 
@@ -16,32 +18,34 @@
 </head>
 <body class="theme-stratos">
 
+
   <!-- Header / Navigation -->
-  <header class="site-header">
-    <div class="wrap">
-      <div class="logo">CS Major Guide</div>
-      <button class="menu-toggle" aria-label="Toggle menu">Menu</button>
-      <nav class="nav">
-        <ul>
-           <li><a href="../index.html">Home</a></li>
-          <li><a class="active" href="../pages/learn.html">Learn More About CS</a></li>
-          <li><a href="../pages/life.html">Life as a CS Major</a></li>
-          <li><a href="../pages/cs-curriculum.html">Typical CS Curriculum</a></li>
-         <li><a  href="tool&resources.html">Tools and Resources</a></li>
-          <li><a href="../pages/career-paths.html">Careers in CS</a></li>
-          <li><a href="../pages/why_cs.html">Why CS</a></li>
-          <li><a href="../pages/jobs.html">Jobs & Roles</a></li>
-          <li><a href="../pages/prepare.html">Get Prepared</a></li>
-           <li><a href="../pages/contacts.html">FAQ & Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<header class="site-header">
+  <div class="container">
+    <div class="logo">Justice League CS Guide</div>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-menu">
+      Menu
+    </button>
+    <nav class="nav">
+      <ul id="site-menu">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="learn.html">Learn More</a></li>
+        <li><a href="life.html">Day in the life</a></li>
+        <li><a href="cs-curriculum.html">CS Curriculum</a></li>
+        <li><a href="tool&resources.html">Tools/Resources</a></li>
+        <li><a href="career-paths.html">Career Paths</a></li>
+        <li><a href="why_cs.html">Why CS</a></li>
+        <li><a href="jobs.html">Salary Ranges</a></li>
+        <li><a href="prepare.html">Get Prepared</a></li>
+        <li><a href="contacts.html">FAQs/Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
   <!-- Hero Section -->
   <section class="page-hero">
     <div class="wrap">
-      <span class="eyebrow">Explore CS</span>
       <h1>Learn More About Computer Science</h1>
       <p>Understand the fundamentals, explore fields, and find starter resources to begin your CS journey.</p>
     </div>
@@ -50,48 +54,45 @@
   <main class="wrap">
     <!-- Hero Image -->
     <figure class="hero-img">
-      <img src="../assets/images/computer-science.jpg" alt="Students learning computer science">
+      <img src="../assets/images/computer science.jpg" alt="Students learning computer science">
     </figure>
 
     <!-- What is CS -->
-    <section class="prose">
-      <h2>What is Computer Science?</h2>
-      <p>Computer Science is the study of computation and information—covering algorithms, data, hardware, software, and systems.</p>
-    </section>
+<section class="prose fun-intro">
+  <div class="terminal">
+    <p class="typing">> Initiating hack... accessing mainframe...</p>
+    <p class="typing delay">> Bypassing firewalls...</p>
+    <p class="typing delay2">> Found it! The real secret is...</p>
+  </div>
 
-    <!-- Fields -->
-    <section>
-      <h3>Fields</h3>
-      <div class="cards">
-        <article class="card">
-          <img src="../assets/images/ai.jpg" alt="Illustration of AI and data science">
-          <h4>AI &amp; Data</h4>
-          <p>Machine learning, data analysis, natural language processing, and computer vision.</p>
-        </article>
-        <article class="card">
-          <img src="../assets/images/frontend-vs-backend.jpg" alt="Web development illustration">
-          <h4>Web &amp; Apps</h4>
-          <p>Frontend and backend development, APIs, and mobile applications.</p>
-        </article>
-      </div>
-    </section>
+  <h2>What is Computer Science?</h2>
+  <p>
+    Computer Science isn’t really about “hacking the mainframe.”  
+    It’s the study of computation and information—covering algorithms, data, hardware, software, and systems.
+  </p>
+  <!--  A Short History of Computer Science -->
+<section class="wrap prose">
+  <h2>A Short History of Computer Science</h2>
+  <ul class="key-points">
+    <li><strong>1800s:</strong> Ada Lovelace writes the first algorithm for Babbage’s “Analytical Engine.”</li>
+    <li><strong>1930s–40s:</strong> Alan Turing lays the foundations of computing; WWII sees the first programmable machines.</li>
+    <li><strong>1950s–70s:</strong> Mainframes and programming languages (like FORTRAN, C) power business and science.</li>
+    <li><strong>1980s–90s:</strong> PCs and the internet bring computing to homes and schools worldwide.</li>
+    <li><strong>2000s–Today:</strong> Cloud, AI, mobile, and quantum computing reshape how we live, work, and connect.</li>
+  </ul>
+  <p style="text-align:center; font-style:italic; color:var(--muted); margin-top:1rem;">
+    From punch cards to AI, CS has grown from theory to powering almost every part of modern life.
+  </p>
+</section>
 
-    <!-- Starter Resources -->
-    <section>
-      <h3>Starter Resources</h3>
-      <ul class="resources">
-        <li class="resources__item">
-          <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener">
-            <strong>freeCodeCamp:</strong> Full, guided tracks in HTML/CSS/JS and Python. Build projects as you learn.
-          </a>
-        </li>
-        <li class="resources__item">
-          <a href="https://developer.mozilla.org/" target="_blank" rel="noopener">
-            <strong>MDN Web Docs:</strong> Pro-level docs for web fundamentals—HTML, CSS, JavaScript, APIs.
-          </a>
-        </li>
-      </ul>
-    </section>
+<section class="wrap prose">
+  <h2>Where We’re Headed</h2>
+  <p>
+    Now that you know what Computer Science is and where it came from,
+    let’s explore more about the different roles, paths, and areas you can dive into from programming and AI to cybersecurity and beyond.
+  </p>
+</section>
+
   </main>
   <script src="../assets/js/script.js"></script>
 

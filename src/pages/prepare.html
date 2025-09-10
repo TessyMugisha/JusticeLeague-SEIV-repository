@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="Comprehensive guide on how to prepare for a Computer Science major. Learn essential skills, tools, and strategies to succeed in your CS academic journey.">
   <title>How to Prepare for a CS Major • CS Major Guide</title>
 
@@ -13,132 +13,202 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Page-local polish (scoped) -->
+  <style>
+    .lead { color: var(--muted); font-size: 1.05rem; max-width: 70ch; margin: .4rem auto 0; }
+    .prep-section { margin-top: 32px; }
+    .prep-grid, .provider-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+    .prep-card, .provider-card {
+      background: var(--surface);
+      border: 1px solid var(--header-border);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: var(--shadow);
+    }
+    .prep-card h3, .provider-card h3 { margin-top: 0; }
+    .provider-card p { color: var(--muted); margin-top: 6px; }
+    .provider-actions { margin-top: 10px; display: flex; gap: 10px; flex-wrap: wrap; }
+    .btn-ghost { border: 1px solid var(--header-border); background: transparent; color: var(--header-text); padding: 10px 14px; border-radius: 999px; font-weight: 700; text-decoration: none; display: inline-block; }
+    .btn-ghost:hover { background: rgba(255,255,255,.06); color: var(--brand-strong); }
+    .check { list-style: none; padding-left: 1.2rem; margin: .4rem 0 0; }
+    .check li { position: relative; margin: .35rem 0; }
+    .check li::before { content: "✓"; position: absolute; left: -1.2rem; color: var(--brand-strong); font-weight: 900; }
+    .cta-section { text-align: center; margin: 36px 0 8px; }
+  </style>
 </head>
 <body class="theme-stratos">
 
   <!-- Header / Navigation -->
   <header class="site-header">
     <div class="container">
-      <div class="logo">CS Major Guide</div>
-      <button class="menu-toggle" aria-label="Toggle menu">Menu</button>
+      <div class="logo">Justice League CS Guide</div>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-menu">
+        Menu
+      </button>
       <nav class="nav">
-        <ul>
-     <li><a href="../index.html">Home</a></li>
-          <li><a href="../pages/learn.html">Learn More About CS</a></li>
-          <li><a href="../pages/life.html">Life as a CS Major</a></li>
-          <li><a href="../pages/cs-curriculum.html">Typical CS Curriculum</a></li>
-         <li><a  href="tool&resources.html">Tools and Resources</a></li>
-          <li><a href="../pages/career-paths.html">Careers in CS</a></li>
-          <li><a href="../pages/why_cs.html">Why CS</a></li>
-          <li><a href="../pages/jobs.html">Jobs & Roles</a></li>
-          <li><a class="active" href="../pages/prepare.html">Get Prepared</a></li>
-           <li><a href="../pages/contacts.html">FAQ & Contact</a></li>
+        <ul id="site-menu">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="learn.html">Learn More</a></li>
+          <li><a href="life.html">Day in the life</a></li>
+          <li><a href="cs-curriculum.html">CS Curriculum</a></li>
+          <li><a href="tool&resources.html">Tools/Resources</a></li>
+          <li><a href="career-paths.html">Career Paths</a></li>
+          <li><a href="why_cs.html">Why CS</a></li>
+          <li><a href="jobs.html">Salary Ranges</a></li>
+          <li><a href="prepare.html">Get Prepared</a></li>
+          <li><a href="contacts.html">FAQs/Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="page-hero">
     <div class="wrap">
       <span class="eyebrow">Academic Preparation</span>
       <h1>How to Prepare for a Computer Science Major</h1>
-      <p>Set yourself up for success with our comprehensive guide to preparing for a Computer Science degree program.</p>
+      <p class="lead">Set yourself up for success with a practical plan for math, programming, tools, projects—and quality outside courses.</p>
     </div>
   </section>
 
   <!-- Main Content -->
   <main class="wrap">
 
-    <!-- Academic Foundations -->
-    <section class="preparation-section">
-      <h2>Academic Foundations</h2>
+    <!-- 1) Academic Foundations -->
+    <section class="prep-section">
       <div class="prep-grid">
         <div class="prep-card">
           <h3>Mathematics</h3>
-          <ul>
-            <li>Algebra and Pre-Calculus</li>
-            <li>Discrete Mathematics</li>
-            <li>Statistics and Probability</li>
-            <li>Linear Algebra</li>
+          <ul class="check">
+            <li>Algebra & Pre-Calculus (functions, graphs)</li>
+            <li>Discrete Math (logic, sets, combinatorics)</li>
+            <li>Statistics & Probability (basics for AI/ML)</li>
+            <li>Linear Algebra (vectors, matrices)</li>
           </ul>
         </div>
 
         <div class="prep-card">
           <h3>Programming Fundamentals</h3>
-          <ul>
-            <li>Basic syntax and data types</li>
-            <li>Control structures (loops, conditionals)</li>
-            <li>Functions and algorithms</li>
-            <li>Object-oriented programming concepts</li>
+          <ul class="check">
+            <li>Syntax & data types</li>
+            <li>Control flow (loops, conditionals)</li>
+            <li>Functions, problem decomposition</li>
+            <li>Intro OOP (classes/objects)</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- Essential Technical Skills -->
-    <section class="preparation-section">
-      <h2>Essential Technical Skills</h2>
+    <!-- 2) Essential Technical Skills -->
+    <section class="prep-section">
+      <h2>2) Essential Technical Skills</h2>
       <div class="prep-grid">
         <div class="prep-card">
           <h3>Development Tools</h3>
-          <ul>
-            <li>Version Control (Git/GitHub)</li>
-            <li>Code Editors (VS Code, IntelliJ)</li>
-            <li>Command Line Basics</li>
-            <li>Debugging Tools</li>
+          <ul class="check">
+            <li>Git & GitHub (branching, PRs)</li>
+            <li>VS Code / IntelliJ basics</li>
+            <li>Command line comfort</li>
+            <li>Debuggers & testing</li>
           </ul>
         </div>
 
         <div class="prep-card">
-          <h3>Key Concepts</h3>
-          <ul>
-            <li>Data Structures</li>
-            <li>Algorithms</li>
-            <li>Computational Thinking</li>
-            <li>Problem-Solving Strategies</li>
+          <h3>Core Concepts</h3>
+          <ul class="check">
+            <li>Data Structures (arrays, maps, trees)</li>
+            <li>Algorithms (sorting, searching)</li>
+            <li>Computational thinking</li>
+            <li>Problem-solving strategies</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- Practical Preparation -->
-    <section class="preparation-section">
-      <h2>Practical Preparation</h2>
+    <!-- 3) Practical Preparation -->
+    <section class="prep-section">
+      <h2>3) Practical Preparation</h2>
       <div class="prep-grid">
         <div class="prep-card">
           <h3>Build Projects</h3>
-          <p>Start with small projects to apply your knowledge:</p>
-          <ul>
-            <li>Simple web applications</li>
-            <li>Command-line tools</li>
-            <li>Mobile apps</li>
-            <li>Open source contributions</li>
+          <p>Apply what you learn with quick wins:</p>
+          <ul class="check">
+            <li>Simple web apps (login + DB)</li>
+            <li>Command-line utilities</li>
+            <li>Basic mobile apps</li>
+            <li>Small open-source contributions</li>
           </ul>
         </div>
 
         <div class="prep-card">
           <h3>Academic Readiness</h3>
-          <ul>
-            <li>Time management skills</li>
-            <li>Study groups and collaboration</li>
-            <li>Technical writing</li>
-            <li>Research skills</li>
+          <ul class="check">
+            <li>Time management & study rhythm</li>
+            <li>Find a study group / peer mentor</li>
+            <li>Technical writing & note-taking</li>
+            <li>Research & documentation habits</li>
           </ul>
         </div>
       </div>
     </section>
 
+    <!-- 4) Take Outside Courses -->
+    <section class="prep-section">
+      <h2>4) Take Outside Courses</h2>
+      <p class="lead">Level up with structured, beginner-friendly courses you can do alongside school.</p>
+      <div class="provider-grid">
+
+        <div class="provider-card">
+          <h3>CodePath</h3>
+          <p>Free, career-focused courses (mobile, web, cybersecurity) with mentorship and industry connections.</p>
+          <div class="provider-actions">
+            <a class="btn-ghost" href="https://www.codepath.org/" target="_blank" rel="noopener">Visit CodePath →</a>
+          </div>
+        </div>
+
+        <div class="provider-card">
+          <h3>Codecademy</h3>
+          <p>Interactive coding lessons in Python, JavaScript, web dev, and more—great for practicing fundamentals.</p>
+          <div class="provider-actions">
+            <a class="btn-ghost" href="https://www.codecademy.com/" target="_blank" rel="noopener">Visit Codecademy →</a>
+          </div>
+        </div>
+
+        <div class="provider-card">
+          <h3>CS50 (Harvard)</h3>
+          <p>Rigorous introduction to computer science—problem sets, lectures, and a final project to show off.</p>
+          <div class="provider-actions">
+            <a class="btn-ghost" href="https://cs50.harvard.edu/" target="_blank" rel="noopener">Explore CS50 →</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <!-- Call to Action -->
     <section class="cta-section">
-      <h2>Ready to Start Your CS Journey?</h2>
-      <p>Begin with our recommended learning path and build a strong foundation for your Computer Science studies.</p>
-      <a href="tools-resources.html" class="btn btn-primary">Explore Learning Resources</a>
+      <h2>Ready to start?</h2>
+      <p>Pick one math focus, one programming path, and one outside course. Then build one small project each month.</p>
+      <a href="tool&resources.html" class="btn">Explore Learning Resources</a>
     </section>
 
   </main>
 
-  <!-- Script for menu toggle -->
-  <script src="../assets/js/script.js"></script>
+  <!-- Menu toggle -->
+  <script>
+    (function () {
+      const btn = document.querySelector('.menu-toggle');
+      const list = document.getElementById('site-menu');
+      btn?.addEventListener('click', () => {
+        const open = list.classList.toggle('show');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    })();
+  </script>
 </body>
 </html>

@@ -7,81 +7,136 @@
   <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
 <body>
-  
-  <!-- Header / Navigation -->
-  <header class="site-header">
-    <div class="container">
-      <div class="logo">CS Major Guide</div>
-      <button class="menu-toggle">Menu</button>
-      <nav class="nav">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../pages/learn.html">Learn More About CS</a></li>
-          <li><a href="../pages/life.html">Life as a CS Major</a></li>
-          <li><a href="../pages/cs-curriculum.html">Typical CS Curriculum</a></li>
-         <li><a  href="tool&resources.html">Tools and Resources</a></li>
-          <li><a class="active" href="../pages/career-paths.html">Careers in CS</a></li>
-          <li><a href="../pages/why_cs.html">Why CS</a></li>
-          <li><a href="../pages/jobs.html">Jobs & Roles</a></li>
-          <li><a href="../pages/prepare.html">Get Prepared</a></li>
-           <li><a href="../pages/contacts.html">FAQ & Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="page-hero">
-    <div class="wrap">
-      <span class="eyebrow">Pathways</span>
-      <h1>What kind of career can a CS major have?</h1>
-      <p>CS careers range from building mobile apps or websites to defending networks, analyzing data, and creating intelligent systems.</p>
-    </div>
+<!-- Header / Navigation (unchanged) -->
+<header class="site-header">
+  <div class="container">
+    <div class="logo">Justice League CS Guide</div>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-menu">
+      Menu
+    </button>
+    <nav class="nav">
+      <ul id="site-menu">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="learn.html">Learn More</a></li>
+        <li><a href="life.html">Day in the life</a></li>
+        <li><a href="cs-curriculum.html">CS Curriculum</a></li>
+        <li><a href="tool&resources.html">Tools/Resources</a></li>
+        <li><a href="career-paths.html">Career Paths</a></li>
+        <li><a href="why_cs.html">Why CS</a></li>
+        <li><a href="jobs.html">Salary Ranges</a></li>
+        <li><a href="prepare.html">Get Prepared</a></li>
+        <li><a href="contacts.html">FAQs/Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Choose Your Path</span>
+    <h1>Explore CS Career Paths</h1>
+    <p>From building apps to securing networks and training AI—see what each role does and where it shows up in the real world.</p>
+  </div>
+</section>
+
+
+<main class="wrap">
+  <!-- Role cards (no salary / no starter-skills) -->
+  <section class="role-grid">
+
+    <article class="role-card" id="swe">
+      <header>
+        <div class="role-emoji" aria-hidden="true">💻</div>
+        <h3>Software Engineer</h3>
+        <p class="tagline">Design, build, and ship applications and services for web, mobile, or backend.</p>
+      </header>
+      <ul>
+        <li>Common in: tech companies, startups, finance, healthcare, government.</li>
+        <li>You might enjoy this if you like turning ideas into working products.</li>
+      </ul>
+      <p><a class="inline-link" href="cs-curriculum.html">See related courses →</a></p>
+    </article>
+
+    <article class="role-card" id="data">
+      <header>
+        <div class="role-emoji" aria-hidden="true">📊</div>
+        <h3>Data / ML Engineer</h3>
+        <p class="tagline">Build data pipelines and production ML systems that power analytics and AI.</p>
+      </header>
+      <ul>
+        <li>Common in: streaming, e-commerce, social, research labs.</li>
+        <li>You might enjoy this if you love patterns, metrics, and experiments.</li>
+      </ul>
+      <p><a class="inline-link" href="cs-curriculum.html">See related courses →</a></p>
+    </article>
+
+    <article class="role-card" id="cyber">
+      <header>
+        <div class="role-emoji" aria-hidden="true">🛡️</div>
+        <h3>Cybersecurity Analyst</h3>
+        <p class="tagline">Detect threats, harden systems, and respond to security incidents.</p>
+      </header>
+      <ul>
+        <li>Common in: banks, defense, cloud providers, universities.</li>
+        <li>You might enjoy this if you like puzzles and protecting people.</li>
+      </ul>
+      <p><a class="inline-link" href="cs-curriculum.html">See related courses →</a></p>
+    </article>
+
+    <article class="role-card" id="cloud">
+      <header>
+        <div class="role-emoji" aria-hidden="true">☁️</div>
+        <h3>Cloud / DevOps Engineer</h3>
+        <p class="tagline">Automate infrastructure and CI/CD to keep systems fast and reliable.</p>
+      </header>
+      <ul>
+        <li>Common in: SaaS companies, cloud teams, platform orgs.</li>
+        <li>You might enjoy this if you like tooling, automation, and uptime.</li>
+      </ul>
+      <p><a class="inline-link" href="cs-curriculum.html">See related courses →</a></p>
+    </article>
+
+    <article class="role-card" id="pm">
+      <header>
+        <div class="role-emoji" aria-hidden="true">🧭</div>
+        <h3>Product Manager</h3>
+        <p class="tagline">Define problems, align teams, and ship features customers love.</p>
+      </header>
+      <ul>
+        <li>Common in: tech, startups, and any org with digital products.</li>
+        <li>You might enjoy this if you like strategy, writing, and teamwork.</li>
+      </ul>
+      <p><a class="inline-link" href="learn.html">Learn more about roles →</a></p>
+    </article>
+
+    <article class="role-card" id="ux">
+      <header>
+        <div class="role-emoji" aria-hidden="true">🎨</div>
+        <h3>UX Engineer</h3>
+        <p class="tagline">Bridge design and engineering to build accessible, polished interfaces.</p>
+      </header>
+      <ul>
+        <li>Common in: product teams, design systems, front-end platforms.</li>
+        <li>You might enjoy this if you care about usability and aesthetics.</li>
+      </ul>
+      <p><a class="inline-link" href="cs-curriculum.html">See related courses →</a></p>
+    </article>
+
   </section>
+</main>
 
-  <!-- Career Cards -->
-  <section class="wrap cards">
-    <div class="card">
-      <h3>Software Engineer</h3>
-      <p>Design, build, and maintain applications and services (web, mobile, backend).</p>
-    </div>
-    <div class="card">
-      <h3>Data/ML Engineer</h3>
-      <p>Build data pipelines and machine learning systems used in analytics and AI products.</p>
-    </div>
-    <div class="card">
-      <h3>Cybersecurity Analyst</h3>
-      <p>Protect systems, respond to incidents, and improve security posture.</p>
-    </div>
-    <div class="card">
-      <h3>Cloud/DevOps Engineer</h3>
-      <p>Automate infrastructure, CI/CD, and reliability at scale.</p>
-    </div>
-    <div class="card">
-      <h3>Product Manager</h3>
-      <p>Define problems, coordinate teams, and ship features customers love.</p>
-    </div>
-    <div class="card">
-      <h3>UX Engineer</h3>
-      <p>Bridge design and engineering to build delightful interfaces.</p>
-    </div>
-  </section>
-
-  <!-- Note Section -->
-  <section class="wrap note">
-    <p>
-      <strong>Note:</strong> Many students start broadly as software engineers, then specialize after exposure to different projects.
-    </p>
-    <p>
-      Learn more here: 
-      <a href="https://www.cmich.edu/blog/all-things-higher-ed/23-careers-computer-science-degree?" target="_blank">
-        23 Careers You Can Get with a Computer Science Degree
-      </a>
-    </p>
-  </section>
-
-
-  <!-- Script for menu toggle -->
-  <script src="script.js"></script>
+<!-- Menu toggle -->
+<script>
+  (function () {
+    const btn = document.querySelector('.menu-toggle');
+    const list = document.getElementById('site-menu');
+    btn?.addEventListener('click', () => {
+      const open = list.classList.toggle('show');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
 </body>
 </html>

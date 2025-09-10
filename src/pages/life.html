@@ -1,3 +1,5 @@
+<!-- Tessy Mugisha -->
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,101 +8,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="A day in the life of a Computer Science major: courses, skills, study rhythm, and FAQs." />
   <link rel="stylesheet" href="../assets/css/styles.css" />
-
-  <!-- Stratos Blue font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-  <script defer src="../assets/js/inject.js"></script>
 </head>
-<body class="theme-stratos">
+<body>
+
 
   <!-- Header / Navigation -->
-  <header class="site-header">
-    <div class="container">
-      <div class="logo">CS Major Guide</div>
-      <button class="menu-toggle" aria-label="Toggle menu">Menu</button>
-      <nav class="nav">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../pages/learn.html">Learn More About CS</a></li>
-          <li><a class="active" href="../pages/life.html">Life as a CS Major</a></li>
-          <li><a href="../pages/cs-curriculum.html">Typical CS Curriculum</a></li>
-         <li><a href="tool&resources.html">Tools and Resources</a></li>
-          <li><a href="../pages/career-paths.html">Careers in CS</a></li>
-          <li><a href="../pages/why_cs.html">Why CS</a></li>
-          <li><a href="../pages/jobs.html">Jobs & Roles</a></li>
-          <li><a href="../pages/prepare.html">Get Prepared</a></li>
-           <li><a href="../pages/contacts.html">FAQ & Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<header class="site-header">
+  <div class="container">
+    <div class="logo">Justice League CS Guide</div>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-menu">
+      Menu
+    </button>
+    <nav class="nav">
+      <ul id="site-menu">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="learn.html">Learn More</a></li>
+        <li><a href="life.html">Day in the life</a></li>
+        <li><a href="cs-curriculum.html">CS Curriculum</a></li>
+        <li><a href="tool&resources.html">Tools/Resources</a></li>
+        <li><a href="career-paths.html">Career Paths</a></li>
+        <li><a href="why_cs.html">Why CS</a></li>
+        <li><a href="jobs.html">Salary Ranges</a></li>
+        <li><a href="prepare.html">Get Prepared</a></li>
+        <li><a href="contacts.html">FAQs/Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-  <!-- Hero Section -->
+<main>
+
+  <!-- Hero -->
   <section class="page-hero">
     <div class="wrap">
-      <span class="eyebrow">Student Life</span>
       <h1>What It’s Like Being a CS Major</h1>
-      <p>From morning lectures to evening study groups—here’s a realistic snapshot of the rhythm, courses, and skills you’ll build.</p>
     </div>
   </section>
 
-  <!-- Main Content -->
-  <main class="wrap">
-
-    <!-- Cards / Media -->
-    <section class="cards">
-      <figure class="card media">
-        <img src="../assets/images/cs-major.jpg" alt="Computer science students collaborating in a study group">
-        <figcaption class="muted">Teamwork matters: most projects use Git and code reviews.</figcaption>
-      </figure>
-
-      <article class="card">
-        <h3>A Day in the Life</h3>
-        <ul class="checklist">
-          <li><strong>Morning:</strong> Lecture/Lab (Data Structures, Systems, Math)</li>
-          <li><strong>Afternoon:</strong> Team project using Git &amp; VS Code</li>
-          <li><strong>Evening:</strong> Study group, office hours, coding practice</li>
+<section class="wrap day-life-split">
+  <!-- Left column: day cards -->
+  <div class="day-life-text">
+    <div class="day-grid">
+      <!-- Morning -->
+      <article class="day-card">
+        <div class="day-emoji" aria-hidden="true">☀️</div>
+        <h3>Morning</h3>
+        <ul>
+          <li>Lecture/Lab (Data Structures, Systems, or Math)</li>
+          <li>Quick notes review + coffee</li>
+          <li>Check assignments & emails</li>
         </ul>
       </article>
-    </section>
 
-    <!-- Split Section -->
-    <section class="split">
-      <div>
-        <h3>Core Courses &amp; Skills</h3>
-        <ul class="bullet-columns">
-          <li>Programming (Python/Java/C++)</li>
-          <li>Data Structures &amp; Algorithms</li>
-          <li>Software Engineering (team projects)</li>
-          <li>Operating Systems &amp; Networks</li>
-          <li>Databases &amp; SQL</li>
+      <!-- Afternoon -->
+      <article class="day-card">
+        <div class="day-emoji" aria-hidden="true">🌤️</div>
+        <h3>Afternoon</h3>
+        <ul>
+          <li>Team project in Git + VS Code</li>
+          <li>Lab hours / debugging with a TA</li>
+          <li>Short break: snack + stretch</li>
         </ul>
-      </div>
-      <aside class="note">
-        <h4>Tip</h4>
-        <p>Join a coding club or hackathon early—great for projects and finding study buddies.</p>
-      </aside>
-    </section>
+      </article>
 
-    <!-- FAQ Section -->
-    <section class="faq">
-      <h3>FAQ</h3>
-      <details>
-        <summary>Do I need a powerful laptop?</summary>
-        <p>8–16 GB RAM is fine to start. Most schools provide lab machines and remote servers for heavier tasks.</p>
-      </details>
-      <details>
-        <summary>How much math will I take?</summary>
-        <p>Usually Calculus I–II and Discrete Math at minimum; some programs add Linear Algebra and Probability.</p>
-      </details>
-    </section>
+      <!-- Night -->
+      <article class="day-card">
+        <div class="day-emoji" aria-hidden="true">🌙</div>
+        <h3>Night</h3>
+        <ul>
+          <li>Study group / office hours</li>
+          <li>Coding practice (LeetCode/HackerRank)</li>
+          <li>Plan tomorrow’s tasks</li>
+        </ul>
+      </article>
+    </div>
+  </div>
 
+  <!-- Right column: image -->
+<aside class="day-life-media">
+  <img src="../assets/images/cs%20major.jpg" alt="CS major studying" class="side-img" />
+</aside>
+</section>
+<section class="wrap day-closing">
+  <p>
+    This isn’t a one-size-fits-all routine. Every CS major’s day looks a little different.
+    Take time for hobbies, learn beyond the classroom, and make connections!
+  </p>
+</section>
   </main>
-
-
   <!-- Script for menu toggle -->
   <script src="script.js"></script>
 </body>
