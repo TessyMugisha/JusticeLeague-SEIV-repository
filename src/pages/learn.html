@@ -6,35 +6,39 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="Understand the fundamentals of computer science, explore fields, and start with beginner-friendly resources." />
 
+  <!-- Styles -->
   <link rel="stylesheet" href="../assets/css/styles.css" />
 
-  <!-- Stratos Blue font -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body class="theme-stratos">
 
+  <!-- Header / Navigation -->
   <header class="site-header">
     <div class="wrap">
       <div class="logo">CS Major Guide</div>
-      <button class="menu-toggle">Menu</button>
+      <button class="menu-toggle" aria-label="Toggle menu">Menu</button>
       <nav class="nav">
         <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a class="active" href="learn.html">Learn More About CS</a></li>
-          <li><a href="life.html">Life as a CS Major</a></li>
-          <li><a href="cs-curriculum.html">Typical CS Curriculum</a></li>
-          <li><a href="tools-resources.html">Tools & Resources</a></li>
-          <li><a href="career-paths.html">Careers in CS</a></li>
-          <li><a href="why_cs.html">Why CS</a></li>
-          <li><a href="jobs.html">Jobs & Roles</a></li>
-          <li><a href="prepare.html">Get Prepared</a></li>
+           <li><a href="../index.html">Home</a></li>
+          <li><a class="active" href="../pages/learn.html">Learn More About CS</a></li>
+          <li><a href="../pages/life.html">Life as a CS Major</a></li>
+          <li><a href="../pages/cs-curriculum.html">Typical CS Curriculum</a></li>
+         <li><a  href="tool&resources.html">Tools and Resources</a></li>
+          <li><a href="../pages/career-paths.html">Careers in CS</a></li>
+          <li><a href="../pages/why_cs.html">Why CS</a></li>
+          <li><a href="../pages/jobs.html">Jobs & Roles</a></li>
+          <li><a href="../pages/prepare.html">Get Prepared</a></li>
+           <li><a href="../pages/contacts.html">FAQ & Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+  <!-- Hero Section -->
   <section class="page-hero">
     <div class="wrap">
       <span class="eyebrow">Explore CS</span>
@@ -43,32 +47,36 @@
     </div>
   </section>
 
-  <div class="wrap">
+  <main class="wrap">
+    <!-- Hero Image -->
     <figure class="hero-img">
       <img src="../assets/images/computer-science.jpg" alt="Students learning computer science">
     </figure>
 
+    <!-- What is CS -->
     <section class="prose">
       <h2>What is Computer Science?</h2>
       <p>Computer Science is the study of computation and information—covering algorithms, data, hardware, software, and systems.</p>
     </section>
 
+    <!-- Fields -->
     <section>
       <h3>Fields</h3>
       <div class="cards">
         <article class="card">
-          <img src="../assets/images/ai.jpg" alt="AI illustration">
+          <img src="../assets/images/ai.jpg" alt="Illustration of AI and data science">
           <h4>AI &amp; Data</h4>
           <p>Machine learning, data analysis, natural language processing, and computer vision.</p>
         </article>
         <article class="card">
-          <img src="../assets/images/frontend-vs-backend.jpg" alt="Web illustration">
+          <img src="../assets/images/frontend-vs-backend.jpg" alt="Web development illustration">
           <h4>Web &amp; Apps</h4>
           <p>Frontend and backend development, APIs, and mobile applications.</p>
         </article>
       </div>
     </section>
 
+    <!-- Starter Resources -->
     <section>
       <h3>Starter Resources</h3>
       <ul class="resources">
@@ -84,7 +92,8 @@
         </li>
       </ul>
     </section>
-  </div>
+  </main>
+  <script src="../assets/js/script.js"></script>
 
 </body>
 </html>
