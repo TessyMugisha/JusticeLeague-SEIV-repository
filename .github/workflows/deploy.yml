@@ -12,17 +12,12 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: dev
-      - name: Ensure remote directory exists
-        run: |
-          ssh -o StrictHostKeyChecking=no -i ~/.ssh/deploy_key ubuntu@project1.eaglesoftwareteam.com "mkdir -p /var/www/html/project1/t1"
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@v2.1.1
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
           ARGS: "-rltgoDzvO --delete"
-          SOURCE: "./"
+          SOURCE: "/"
           REMOTE_HOST: "project1.eaglesoftwareteam.com"
           REMOTE_USER: ubuntu
           TARGET: /var/www/html/seiv2025/p1/t1
