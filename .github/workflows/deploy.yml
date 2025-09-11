@@ -12,21 +12,12 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: dev
-<<<<<<< HEAD
 
-=======
->>>>>>> fee2b557fa6c39a38670a2f620cfe5aa1a62adbf
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@v2.1.1
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-<<<<<<< HEAD
           REMOTE_HOST: project1.eaglesoftwareteam.com
-=======
-          ARGS: "-rltgoDzvO --delete"
-          SOURCE: "src/"
-          REMOTE_HOST: "project1.eaglesoftwareteam.com"
->>>>>>> fee2b557fa6c39a38670a2f620cfe5aa1a62adbf
           REMOTE_USER: ubuntu
 
           # Put the folder that actually has index.html
