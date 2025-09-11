@@ -2,27 +2,36 @@ name: DEPLOY TO AWS
 on:
   pull_request:
     types: [closed]
-    branches:
-      - dev
+    branches: [dev]
 
 jobs:
   aws-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout dev
+        uses: actions/checkout@v4
         with:
           ref: dev
-      - name: Ensure remote directory exists
-        run: |
-          ssh -o StrictHostKeyChecking=no -i ~/.ssh/deploy_key ubuntu@project1.eaglesoftwareteam.com "mkdir -p /var/www/html/project1/t1"
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@v2.1.1
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-          ARGS: "-rltgoDzvO --delete"
-          SOURCE: "./"
-          REMOTE_HOST: "project1.eaglesoftwareteam.com"
+          REMOTE_HOST: project1.eaglesoftwareteam.com
           REMOTE_USER: ubuntu
-          TARGET: /var/www/html/seiv2025/p1/t1
+
+          # Put the folder that actually has index.html
+          SOURCE: "."
+          # Match your server path & URL structure
+          TARGET: "/var/www/html/seiv2025/p1/t1"
+
+          ARGS: "-rltgoDzvO --delete"
+          EXCLUDE: |
+            .git*
+            .github/
+            node_modules/
+            **/.DS_Store
+
+          # Make sure the target path exists (no sudo)
+          SCRIPT_BEFORE: |
+            mkdir -p /var/www/html/seiv2025/p1/t1 || true
