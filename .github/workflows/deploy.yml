@@ -21,3 +21,4 @@ jobs:
           REMOTE_HOST: "project1.eaglesoftwareteam.com"
           REMOTE_USER: ubuntu
           TARGET: /var/www/html/seiv2025/p1/t1
+
