@@ -20,4 +20,4 @@ jobs:
           SOURCE: "/"
           REMOTE_HOST: "project1.eaglesoftwareteam.com"
           REMOTE_USER: ubuntu
-          TARGET: "/var/www/html/project1/t1"
+          TARGET: "/var/www/html/seiv2025/p1/t1"
